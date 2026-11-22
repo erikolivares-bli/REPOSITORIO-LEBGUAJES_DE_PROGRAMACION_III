@@ -1,0 +1,28 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=== Datos del Alumno ===");
+        Console.WriteLine();
+        Console.Write("Nombre completo: "); 
+        string nombre = Console.ReadLine();
+        Console.Write("Edad: ");
+        string edad = Console.ReadLine();
+        Console.Write("Fecha de nacimiento (dd/mm/aaaa): ");
+        string fecha = Console.ReadLine();
+        Console.Write("Carrera a la que desea ingresar: ");
+        string carrera = Console.ReadLine();
+        Console.WriteLine();
+        Console.WriteLine("-----------------------------------");
+        Console.WriteLine($"Hola {nombre}, bienvenido."); 
+        Console.WriteLine($"Tu edad es: {edad} años"); 
+        Console.WriteLine($"Fecha de nacimiento: {fecha}");
+        Console.WriteLine($"Carrera seleccionada: {carrera}");
+        Console.WriteLine("Gracias por registrarte."); 
+        Console.WriteLine("-----------------------------------");
+        Console.WriteLine();
+        Console.WriteLine("Presiona cualquier tecla para salir..."); 
+        Console.ReadKey();
+    }
+}
